@@ -8,3 +8,6 @@ def test_Fibonacci_integer():
     with pytest.raises(ValueError):
         Fibonacci('Moon')
 
+def test_Fibonacci_zero():
+    assert list(Fibonacci(0)) == [0]
+
