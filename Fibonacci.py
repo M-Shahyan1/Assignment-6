@@ -18,6 +18,7 @@ class Fibonacci:
     def __next__(self):
         if self.count < self.max_count:
             logged_digit = self.A
+            self.A, self.B = self.B, self.A + self.B
             self.count += 1
             return logged_digit
 
